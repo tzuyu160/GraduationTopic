@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/mainbackground" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="167dp"
+            android:layout_height="51dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="424dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/topic" />
+
+        <Button
+            android:id="@+id/animation"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="210dp"
+            android:layout_marginBottom="333dp"
+            android:background="@drawable/maincolor"
+            android:text="動畫教學"
+            android:textSize="12sp"
+            app:backgroundTint="#ECBAD3"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/game"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="202dp"
+            android:layout_marginBottom="292dp"
+            android:background="@drawable/maincolor"
+            android:text="進入關卡"
+            android:textSize="12sp"
+            app:backgroundTint="#94B0F8"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/finger"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="198dp"
+            android:layout_marginBottom="252dp"
+            android:background="@drawable/maincolor"
+            android:text="手勢比一比"
+            android:textSize="12sp"
+            app:backgroundTint="#EFD78F"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
