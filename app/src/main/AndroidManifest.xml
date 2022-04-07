@@ -10,13 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GraduationTopic">
         <activity
+            android:name=".gameActivity1_2"
+            android:exported="true" />
+        <activity
+            android:name=".gameActivity1_1"
+            android:exported="true" />
+        <activity
+            android:name=".gameActivity1"
+            android:exported="true" />
+        <activity
             android:name=".gameActivity3"
             android:exported="true" />
         <activity
             android:name=".gameActivity2"
-            android:exported="true" />
-        <activity
-            android:name=".gameActivity1"
             android:exported="true" />
         <activity
             android:name=".fingerActivity"

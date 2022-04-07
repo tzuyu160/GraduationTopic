@@ -22,7 +22,7 @@
             app:srcCompat="@drawable/mainbackground" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/topic"
             android:layout_width="167dp"
             android:layout_height="51dp"
             android:layout_alignParentEnd="true"

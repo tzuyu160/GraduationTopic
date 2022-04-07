@@ -26,6 +26,14 @@ class gameActivity : AppCompatActivity() {
             .load(R.drawable.paintbackground)
             .into(img1)
 
+        money.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                intent = Intent(this@gameActivity, gameActivity1::class.java)
+                startActivity(intent)
+                finish()
+            }
+        })
+
     }
 
 
