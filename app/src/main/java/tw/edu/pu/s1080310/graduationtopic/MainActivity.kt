@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             override fun onClick(p0: View?) {
                 intent = Intent(this@MainActivity, animationActivity::class.java)
                 startActivity(intent)
-                finish()
+
             }
         })
 
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             override fun onClick(p0: View?) {
                 intent = Intent(this@MainActivity, gameActivity::class.java)
                 startActivity(intent)
-                finish()
+
             }
         })
 

@@ -13,41 +13,41 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/img2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="0dip"
-            android:layout_marginTop="0dip"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/snail" />
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dip"
+        android:layout_marginTop="0dip"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/drawbackground" />
 
-        <ImageButton
-            android:id="@+id/artboard"
-            android:layout_width="79dp"
-            android:layout_height="67dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="143dp"
-            android:layout_marginBottom="118dp"
-            android:background="#00FFFFFF"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/artboard"
-            tools:ignore="SpeakableTextPresentCheck" />
+    <ImageButton
+        android:id="@+id/pencilbox"
+        android:layout_width="79dp"
+        android:layout_height="67dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="160dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/pencilbox"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageView
-            android:id="@+id/onethousand"
-            android:layout_width="251dp"
-            android:layout_height="257dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="56dp"
-            android:layout_marginBottom="183dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/onethousand"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="42dp" />
+    <ImageView
+        android:id="@+id/onethousand"
+        android:layout_width="251dp"
+        android:layout_height="257dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="164dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/onethousand"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="42dp" />
 
-    </RelativeLayout>
+</RelativeLayout>
 
 </LinearLayout>

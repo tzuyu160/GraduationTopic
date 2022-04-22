@@ -15,7 +15,7 @@ class gameActivity1 : AppCompatActivity() {
 
         val img2: ImageView = findViewById(R.id.img2)
         GlideApp.with(this)
-            .load(R.drawable.snail)
+            .load(R.drawable.drawbackground)
             .into(img2)
 
         val onethousand: ImageView = findViewById(R.id.onethousand)
@@ -23,11 +23,11 @@ class gameActivity1 : AppCompatActivity() {
             .load(R.drawable.onethousand)
             .into(onethousand)
 
-        artboard.setOnClickListener(object : View.OnClickListener {
+        pencilbox.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 intent = Intent(this@gameActivity1, gameActivity1_1::class.java)
                 startActivity(intent)
-                finish()
+
             }
         })
 

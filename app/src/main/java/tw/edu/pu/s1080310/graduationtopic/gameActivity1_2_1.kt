@@ -8,20 +8,21 @@ import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_game1.*
 import kotlinx.android.synthetic.main.activity_game1_1.*
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_game1_2_1.*
+import kotlinx.android.synthetic.main.activity_game1_2_1.back
+import kotlinx.android.synthetic.main.activity_game1_2_1.draw_view
+import kotlinx.android.synthetic.main.activity_game1_2_1.eraser
 import org.tensorflow.lite.support.image.TensorImage
 import tw.edu.pu.s1080310.graduationtopic.ml.Shapes
 
-
-class gameActivity1_1 : AppCompatActivity(),
-    View.OnClickListener, View.OnTouchListener{
-
+class gameActivity1_2_1 : AppCompatActivity(),
+    View.OnClickListener, View.OnTouchListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_game1_1)
+        setContentView(R.layout.activity_game1_2_1)
         getSupportActionBar()?.hide();
+
 
         eraser.setOnClickListener(this)
         draw_view.setOnTouchListener(this)
@@ -32,12 +33,13 @@ class gameActivity1_1 : AppCompatActivity(),
 
         back.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
-                intent = Intent(this@gameActivity1_1, gameActivity1::class.java)
+                intent = Intent(this@gameActivity1_2_1, gameActivity1_2::class.java)
                 startActivity(intent)
             }
         })
 
     }
+
     override fun onClick(p0: View?) {
         draw_view.clearCanvas()  //清除繪圖區
     }
@@ -45,8 +47,8 @@ class gameActivity1_1 : AppCompatActivity(),
     override fun onTouch(p0: View?, event: MotionEvent): Boolean {
         draw_view.onTouchEvent(event)
         if (event.action == MotionEvent.ACTION_UP){
-            //Toast.makeText(this, "手指彈起", Toast.LENGTH_SHORT).show()
-            classifyDrawing(draw_view.getBitmap())//讀取繪圖區成為Bitmap圖檔
+            //Toast.makeText(this, "手指彈起",Toast.LENGTH_SHORT).show()
+            classifyDrawing(draw_view.getBitmap())
 
         }
         return true
@@ -80,27 +82,22 @@ class gameActivity1_1 : AppCompatActivity(),
         }
 
 
-        if(Result=="正方形"&&outputs[0].score * 100.0f>70) {
+        if(Result=="圓形"&&outputs[0].score * 100.0f>30) {
 
-            intent = Intent(this@gameActivity1_1, gameActivity1_2::class.java)
+            intent = Intent(this@gameActivity1_2_1, gameActivity1_2_2::class.java)
             startActivity(intent)
         }
 
-            Result += ": " + String.format("%.1f%%", outputs[0].score * 100.0f)
+        Result += ": " + String.format("%.1f%%", outputs[0].score * 100.0f)
 
-        
+
 
         model.close()
         Toast.makeText(this, Result, Toast.LENGTH_SHORT).show()
 
     }
 
-     }
 
 
 
-
-
-
-
-
+}
