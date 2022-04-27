@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".gameActivity1_2">
 
 
@@ -34,17 +35,17 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
-            android:id="@+id/fiftydollar"
+            android:id="@+id/fifty"
             android:layout_width="413dp"
             android:layout_height="404dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="164dp"
+            android:layout_marginTop="176dp"
             android:layout_marginEnd="0dp"
-            android:layout_marginBottom="162dp"
+            android:layout_marginBottom="150dp"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/fiftydollar" />
+            app:srcCompat="@drawable/fifty" />
 
     </RelativeLayout>
 </LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".gameActivity1_2_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/game1final" />
+
+        <Button
+            android:id="@+id/NT1000"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="251dp"
+            android:layout_marginBottom="76dp"
+            android:text="1000"
+            app:backgroundTint="#7E3A25"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/NT100"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="252dp"
+            android:layout_marginBottom="36dp"
+            android:text="100"
+            app:backgroundTint="#7E3A25"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/NT50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="76dp"
+            android:text="50"
+            app:backgroundTint="#7E3A25" />
+
+        <Button
+            android:id="@+id/NT10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="36dp"
+            android:text="10"
+            app:backgroundTint="#7E3A25" />
+
+        <Button
+            android:id="@+id/NT5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="76dp"
+            android:text="5"
+            app:backgroundTint="#7E3A25" />
+
+        <Button
+            android:id="@+id/NT1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="36dp"
+            android:text="1"
+            app:backgroundTint="#7E3A25" />
+    </RelativeLayout>
+</LinearLayout>

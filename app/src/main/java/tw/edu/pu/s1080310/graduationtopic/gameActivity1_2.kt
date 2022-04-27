@@ -18,10 +18,10 @@ class gameActivity1_2 : AppCompatActivity() {
             .load(R.drawable.drawbackground)
             .into(img3)
 
-        val fiftydollar: ImageView = findViewById(R.id.fiftydollar)
+        val fifty: ImageView = findViewById(R.id.fifty)
         GlideApp.with(this)
-            .load(R.drawable.fiftydollar)
-            .into(fiftydollar)
+            .load(R.drawable.fifty)
+            .into(fifty)
 
         pencilbox.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {

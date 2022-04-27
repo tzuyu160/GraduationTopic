@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".gameActivity1_2_1">
 
     <RelativeLayout
@@ -14,6 +15,19 @@
             android:id="@+id/draw_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="274dp"
+            android:layout_height="343dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="61dp"
+            android:layout_marginEnd="61dp"
+            android:layout_marginBottom="118dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/circle" />
 
         <ImageButton
             android:id="@+id/eraser"

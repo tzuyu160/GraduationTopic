@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GraduationTopic">
         <activity
+            android:name=".gameActivity1_2_4"
+            android:exported="true" />
+        <activity
+            android:name=".gameActivity1_2_3"
+            android:exported="true" />
+        <activity
             android:name=".gameActivity1_2_2"
             android:exported="true" />
         <activity

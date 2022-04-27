@@ -47,7 +47,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/hospital"
             android:layout_width="83dp"
             android:layout_height="88dp"
             android:layout_alignParentEnd="true"

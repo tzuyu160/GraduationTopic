@@ -80,7 +80,7 @@ class gameActivity1_1 : AppCompatActivity(),
         }
 
 
-        if(Result=="正方形"&&outputs[0].score * 100.0f>70) {
+        if(Result=="正方形"&&outputs[0].score * 100.0f>30) {
 
             intent = Intent(this@gameActivity1_1, gameActivity1_2::class.java)
             startActivity(intent)

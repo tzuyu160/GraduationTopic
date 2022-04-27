@@ -2,18 +2,21 @@ package tw.edu.pu.s1080310.graduationtopic
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.ImageView
-import kotlinx.android.synthetic.main.activity_main.*
 
-class animationActivity : AppCompatActivity() {
+class gameActivity1_2_4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_animation)
+        setContentView(R.layout.activity_game1_2_4)
         getSupportActionBar()?.hide();
 
-        val img6: ImageView = findViewById(R.id.img6)
+
+        val img5: ImageView = findViewById(R.id.img5)
         GlideApp.with(this)
-            .load(R.drawable.animbackground)
-            .into(img6)
+            .load(R.drawable.game1final)
+            .into(img5)
+
+
     }
 }
