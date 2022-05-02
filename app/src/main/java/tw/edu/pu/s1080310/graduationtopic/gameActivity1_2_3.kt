@@ -34,6 +34,7 @@ class gameActivity1_2_3 : AppCompatActivity(),
             override fun onClick(p0: View?) {
                 intent = Intent(this@gameActivity1_2_3, gameActivity1_2_2::class.java)
                 startActivity(intent)
+                finish()
             }
         })
 
@@ -87,6 +88,7 @@ fun classifyDrawing(bitmap: Bitmap) {
 
         var intent = Intent(this@gameActivity1_2_3, gameActivity1_2_4::class.java)
         startActivity(intent)
+
     }
 
     Result += ": " + String.format("%.1f%%", outputs[0].score * 100.0f)

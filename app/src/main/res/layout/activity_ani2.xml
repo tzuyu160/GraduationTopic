@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ani2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ani2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/television" />
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="115dp"
+            android:layout_height="109dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="269dp"
+            android:layout_marginBottom="531dp"
+            android:background="#00FFFFFF"
+            android:onClick="StartPlay"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/start"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <VideoView
+            android:id="@+id/vdv1"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginBottom="176dp"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="match_parent"
+            android:layout_height="234dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="156dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ani2top" />
+
+    </RelativeLayout>
+</LinearLayout>

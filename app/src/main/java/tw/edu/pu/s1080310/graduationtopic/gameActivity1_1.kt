@@ -34,6 +34,7 @@ class gameActivity1_1 : AppCompatActivity(),
             override fun onClick(p0: View?) {
                 intent = Intent(this@gameActivity1_1, gameActivity1::class.java)
                 startActivity(intent)
+                finish()
             }
         })
 
@@ -84,6 +85,7 @@ class gameActivity1_1 : AppCompatActivity(),
 
             intent = Intent(this@gameActivity1_1, gameActivity1_2::class.java)
             startActivity(intent)
+
         }
 
             Result += ": " + String.format("%.1f%%", outputs[0].score * 100.0f)
