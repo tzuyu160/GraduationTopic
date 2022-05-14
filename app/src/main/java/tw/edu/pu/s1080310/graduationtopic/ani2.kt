@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_ani1.*
 import kotlinx.android.synthetic.main.activity_ani2.*
 
 class ani2 : AppCompatActivity() {
-    lateinit var mper: MediaPlayer
+
 
     lateinit var vdv1: VideoView
     lateinit var vidControl: MediaController
@@ -22,7 +22,7 @@ class ani2 : AppCompatActivity() {
         setContentView(R.layout.activity_ani2)
         getSupportActionBar()?.hide();
 
-        mper = MediaPlayer()
+
 
         //不要自動休眠
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
@@ -43,38 +43,16 @@ class ani2 : AppCompatActivity() {
     }
 
     fun StartPlay(v: View){
-        mper.reset()
+
         when (v.id) {
 
             R.id.btn1 -> {
                 img8.setVisibility(View.INVISIBLE);
-                vdv1.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.transportation))
+                vdv1.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.tran))
                 vdv1.start()
             }
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        if(mper != null) {
-            mper.release()
-        }
-    }
 
-    override fun onPause() {
-        super.onPause()
-        if(mper != null && mper.isPlaying()){
-            mper.pause()
-        }
-        else{
-            mper.reset()
-        }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        if(mper != null){
-            mper.start()
-        }
-    }
 }

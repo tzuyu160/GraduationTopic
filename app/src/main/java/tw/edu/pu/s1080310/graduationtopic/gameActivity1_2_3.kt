@@ -8,10 +8,9 @@ import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
 import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
+import kotlinx.android.synthetic.main.activity_game1_1.*
 import kotlinx.android.synthetic.main.activity_game1_2_1.*
 import kotlinx.android.synthetic.main.activity_game1_2_3.*
-import kotlinx.android.synthetic.main.activity_game1_2_3.draw_view
 import kotlinx.android.synthetic.main.activity_game1_2_3.eraser
 import org.tensorflow.lite.support.image.TensorImage
 import tw.edu.pu.s1080310.graduationtopic.ml.Shapes
@@ -24,26 +23,26 @@ class gameActivity1_2_3 : AppCompatActivity(),
         getSupportActionBar()?.hide();
 
         eraser.setOnClickListener(this)
-        draw_view.setOnTouchListener(this)
+        draw_view2.setOnTouchListener(this)
 
-        draw_view.setStrokeWidth(50.0f) //畫筆粗細
-        draw_view.setColor(Color.argb(0xff,205,155,155)) //畫筆顏色
-        draw_view.setBackgroundColor(Color.argb(0xff,209,238,238)) //背景顏色
+        draw_view2.setStrokeWidth(50.0f) //畫筆粗細
+        draw_view2.setColor(Color.argb(0xff,205,155,155)) //畫筆顏色
+        draw_view2.setBackgroundColor(Color.argb(0xff,209,238,238)) //背景顏色
 
 
     }
 
 
     override fun onClick(p0: View?) {
-        draw_view.clearCanvas()  //清除繪圖區
+        draw_view2.clearCanvas()  //清除繪圖區
     }
 
 
     override fun onTouch(p0: View?, event: MotionEvent): Boolean {
-        draw_view.onTouchEvent(event)
+        draw_view2.onTouchEvent(event)
         if (event.action == MotionEvent.ACTION_UP){
             //Toast.makeText(this, "手指彈起",Toast.LENGTH_SHORT).show()
-            classifyDrawing(draw_view.getBitmap())
+            classifyDrawing(draw_view2.getBitmap())
         }
         return true
     }

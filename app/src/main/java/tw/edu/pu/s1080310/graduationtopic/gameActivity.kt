@@ -10,8 +10,10 @@ import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.module.AppGlideModule
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.activity_main.*
+import android.widget.Toast
 
-
+import android.content.DialogInterface
+import androidx.appcompat.app.AlertDialog
 
 
 class gameActivity : AppCompatActivity() {
@@ -35,6 +37,7 @@ class gameActivity : AppCompatActivity() {
         })
 
     }
+
 
 
 }

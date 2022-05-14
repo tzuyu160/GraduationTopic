@@ -1,11 +1,15 @@
 package tw.edu.pu.s1080310.graduationtopic
 
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_game1.*
+import kotlinx.android.synthetic.main.activity_game1.pencilbox
+import kotlinx.android.synthetic.main.activity_game1_2.*
 
 class gameActivity1_2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,5 +34,7 @@ class gameActivity1_2 : AppCompatActivity() {
                 finish()
             }
         })
+
+
     }
 }

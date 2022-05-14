@@ -1,6 +1,5 @@
 package tw.edu.pu.s1080310.graduationtopic
 
-import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
