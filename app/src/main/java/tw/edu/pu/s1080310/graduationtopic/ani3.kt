@@ -8,6 +8,7 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.MediaController
 import android.widget.VideoView
+import kotlinx.android.synthetic.main.activity_ani1.*
 import kotlinx.android.synthetic.main.activity_ani3.*
 
 class ani3 : AppCompatActivity() {
@@ -30,6 +31,14 @@ class ani3 : AppCompatActivity() {
         vdv2 = findViewById<VideoView>(R.id.vdv2)
         vidControl = MediaController(this)
         vdv2.setMediaController(vidControl)
+
+
+        back2.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                /* 關閉activity */
+                this@ani3.finish()
+            }
+        })
     }
 
     fun StartPlay(v: View){

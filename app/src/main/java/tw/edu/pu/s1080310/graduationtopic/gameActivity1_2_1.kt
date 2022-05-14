@@ -10,7 +10,6 @@ import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_game1_1.*
 import kotlinx.android.synthetic.main.activity_game1_2_1.*
-import kotlinx.android.synthetic.main.activity_game1_2_1.back
 import kotlinx.android.synthetic.main.activity_game1_2_1.draw_view
 import kotlinx.android.synthetic.main.activity_game1_2_1.eraser
 import org.tensorflow.lite.support.image.TensorImage
@@ -31,13 +30,6 @@ class gameActivity1_2_1 : AppCompatActivity(),
         draw_view.setColor(Color.argb(0xff,205,155,155)) //畫筆顏色
         draw_view.setBackgroundColor(Color.argb(0xff,209,238,238)) //背景顏色
 
-        back.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(p0: View?) {
-                intent = Intent(this@gameActivity1_2_1, gameActivity1_2::class.java)
-                startActivity(intent)
-                finish()
-            }
-        })
 
     }
 
@@ -87,7 +79,7 @@ class gameActivity1_2_1 : AppCompatActivity(),
 
             intent = Intent(this@gameActivity1_2_1, gameActivity1_2_2::class.java)
             startActivity(intent)
-
+            finish()
         }
 
         Result += ": " + String.format("%.1f%%", outputs[0].score * 100.0f)

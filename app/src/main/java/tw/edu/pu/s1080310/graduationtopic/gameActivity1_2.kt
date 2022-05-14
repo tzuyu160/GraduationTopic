@@ -27,7 +27,7 @@ class gameActivity1_2 : AppCompatActivity() {
             override fun onClick(p0: View?) {
                 intent = Intent(this@gameActivity1_2, gameActivity1_2_1::class.java)
                 startActivity(intent)
-
+                finish()
             }
         })
     }

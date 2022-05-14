@@ -30,13 +30,6 @@ class gameActivity1_2_3 : AppCompatActivity(),
         draw_view.setColor(Color.argb(0xff,205,155,155)) //畫筆顏色
         draw_view.setBackgroundColor(Color.argb(0xff,209,238,238)) //背景顏色
 
-        backto.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(p0: View?) {
-                intent = Intent(this@gameActivity1_2_3, gameActivity1_2_2::class.java)
-                startActivity(intent)
-                finish()
-            }
-        })
 
     }
 
@@ -88,6 +81,7 @@ fun classifyDrawing(bitmap: Bitmap) {
 
         var intent = Intent(this@gameActivity1_2_3, gameActivity1_2_4::class.java)
         startActivity(intent)
+        finish()
 
     }
 

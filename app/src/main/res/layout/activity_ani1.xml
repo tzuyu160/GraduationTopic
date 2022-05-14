@@ -4,13 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".ani1">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
         <ImageView
             android:id="@+id/ani1"
@@ -35,6 +33,19 @@
             app:srcCompat="@drawable/start"
             tools:ignore="SpeakableTextPresentCheck" />
 
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="66dp"
+            android:layout_height="63dp"
+            android:layout_alignBottom="@+id/btn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="203dp"
+            android:layout_marginBottom="9dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/backto"
+            tools:ignore="SpeakableTextPresentCheck" />
+
         <VideoView
             android:id="@+id/vdv"
             android:layout_width="match_parent"
@@ -43,7 +54,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="-5dp"
             android:layout_marginBottom="176dp"
-            android:scaleType="centerInside" />
+            android:scaleType="centerInside"/>
 
         <ImageView
             android:id="@+id/img7"
@@ -55,7 +66,5 @@
             android:layout_marginBottom="156dp"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/ani1top" />
-
     </RelativeLayout>
-
 </LinearLayout>

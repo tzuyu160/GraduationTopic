@@ -31,6 +31,15 @@ class ani1 : AppCompatActivity() {
         vdv = findViewById<VideoView>(R.id.vdv)
         vidControl = MediaController(this)
         vdv.setMediaController(vidControl)
+
+        back.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                /* 關閉activity */
+                this@ani1.finish()
+            }
+        })
+
+
     }
 
     fun StartPlay(v: View){
@@ -42,6 +51,8 @@ class ani1 : AppCompatActivity() {
                 vdv.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.aniarchitecture))
                 vdv.start()
             }
+
+
         }
     }
 
@@ -68,4 +79,8 @@ class ani1 : AppCompatActivity() {
             mper.start()
         }
     }
+
+
+
+
 }

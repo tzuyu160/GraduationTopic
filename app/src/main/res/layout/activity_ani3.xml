@@ -33,6 +33,19 @@
             app:srcCompat="@drawable/start"
             tools:ignore="SpeakableTextPresentCheck" />
 
+        <ImageButton
+            android:id="@+id/back2"
+            android:layout_width="66dp"
+            android:layout_height="63dp"
+            android:layout_alignBottom="@+id/btn2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="203dp"
+            android:layout_marginBottom="9dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/backto"
+            tools:ignore="SpeakableTextPresentCheck" />
+
         <VideoView
             android:id="@+id/vdv2"
             android:layout_width="match_parent"

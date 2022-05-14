@@ -1,5 +1,6 @@
 package tw.edu.pu.s1080310.graduationtopic
 
+import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
@@ -30,13 +31,6 @@ class gameActivity1_1 : AppCompatActivity(),
         draw_view.setColor(Color.argb(0xff,205,155,155)) //畫筆顏色
         draw_view.setBackgroundColor(Color.argb(0xff,209,238,238)) //背景顏色
 
-        back.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(p0: View?) {
-                intent = Intent(this@gameActivity1_1, gameActivity1::class.java)
-                startActivity(intent)
-                finish()
-            }
-        })
 
     }
     override fun onClick(p0: View?) {
@@ -85,7 +79,7 @@ class gameActivity1_1 : AppCompatActivity(),
 
             intent = Intent(this@gameActivity1_1, gameActivity1_2::class.java)
             startActivity(intent)
-
+            finish()
         }
 
             Result += ": " + String.format("%.1f%%", outputs[0].score * 100.0f)
