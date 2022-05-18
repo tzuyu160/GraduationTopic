@@ -12,7 +12,8 @@ import kotlinx.android.synthetic.main.activity_game1.*
 import kotlinx.android.synthetic.main.activity_game1_1.*
 import kotlinx.android.synthetic.main.activity_main.*
 import org.tensorflow.lite.support.image.TensorImage
-import tw.edu.pu.s1080310.graduationtopic.ml.Shapes
+import tw.edu.pu.s1080310.graduationtopic.ml.Shapemodel
+
 
 
 class gameActivity1_1 : AppCompatActivity(),
@@ -53,28 +54,35 @@ class gameActivity1_1 : AppCompatActivity(),
 
 
 
-        val model = Shapes.newInstance(this)
 
-        // Creates inputs for reference.
+
+        val model = Shapemodel.newInstance(this)
+
+
         val image = TensorImage.fromBitmap(bitmap)
 
-        // Runs model inference and gets result.
-        //val outputs = model.process(image)
+
+       // val outputs = model.process(image)
         //val probability = outputs.probabilityAsCategoryList
+
+
         val outputs = model.process(image)
             .probabilityAsCategoryList.apply {
                 sortByDescending { it.score } // 排序，高匹配率優先
             }.take(1)  //取最高的1個
         var Result: String = ""
         when (outputs[0].label) {
-            "circle" -> Result = "圓形"
-            "square" -> Result = "正方形"
-            "star" -> Result = "星形"
-            "triangle" -> Result = "三角形"
+            "長方形" -> Result = "長方形"
+            "正方形" -> Result = "正方形"
+            "星號" -> Result = "星形"
+            "三角形" -> Result = "三角形"
+            "圓形" -> Result = "圓形"
+            "7" -> Result = "數字7"
+            "十字" -> Result = "十字"
         }
 
 
-        if(Result=="正方形"&&outputs[0].score * 100.0f>30) {
+        if(Result=="長方形"&&outputs[0].score * 100.0f>30) {
 
             intent = Intent(this@gameActivity1_1, gameActivity1_2::class.java)
             startActivity(intent)

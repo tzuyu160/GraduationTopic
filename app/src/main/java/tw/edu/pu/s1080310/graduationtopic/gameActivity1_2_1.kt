@@ -13,7 +13,8 @@ import kotlinx.android.synthetic.main.activity_game1_2_1.*
 import kotlinx.android.synthetic.main.activity_game1_2_1.draw_view1
 import kotlinx.android.synthetic.main.activity_game1_2_1.eraser
 import org.tensorflow.lite.support.image.TensorImage
-import tw.edu.pu.s1080310.graduationtopic.ml.Shapes
+import tw.edu.pu.s1080310.graduationtopic.ml.Shapemodel
+
 
 class gameActivity1_2_1 : AppCompatActivity(),
     View.OnClickListener, View.OnTouchListener {
@@ -54,24 +55,29 @@ class gameActivity1_2_1 : AppCompatActivity(),
 
 
 
-        val model = Shapes.newInstance(this)
+        val model = Shapemodel.newInstance(this)
 
-        // Creates inputs for reference.
+
         val image = TensorImage.fromBitmap(bitmap)
 
-        // Runs model inference and gets result.
-        //val outputs = model.process(image)
+
+        // val outputs = model.process(image)
         //val probability = outputs.probabilityAsCategoryList
+
+
         val outputs = model.process(image)
             .probabilityAsCategoryList.apply {
                 sortByDescending { it.score } // 排序，高匹配率優先
             }.take(1)  //取最高的1個
         var Result: String = ""
         when (outputs[0].label) {
-            "circle" -> Result = "圓形"
-            "square" -> Result = "正方形"
-            "star" -> Result = "星形"
-            "triangle" -> Result = "三角形"
+            "長方形" -> Result = "長方形"
+            "正方形" -> Result = "正方形"
+            "星號" -> Result = "星形"
+            "三角形" -> Result = "三角形"
+            "圓形" -> Result = "圓形"
+            "7" -> Result = "數字7"
+            "十字" -> Result = "十字"
         }
 
 
