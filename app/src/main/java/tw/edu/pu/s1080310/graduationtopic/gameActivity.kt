@@ -36,6 +36,21 @@ class gameActivity : AppCompatActivity() {
             }
         })
 
+        trafficlight.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                intent = Intent(this@gameActivity, gameActivity2::class.java)
+                startActivity(intent)
+
+            }
+        })
+
+        hospital.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                intent = Intent(this@gameActivity, gameActivity3::class.java)
+                startActivity(intent)
+
+            }
+        })
     }
 
 

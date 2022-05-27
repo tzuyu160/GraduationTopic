@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gameActivity2_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/img13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/game2final" />
+
+        <ImageView
+            android:id="@+id/dan"
+            android:layout_width="210dp"
+            android:layout_height="138dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="156dp"
+            android:layout_marginBottom="322dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/dangif" />
+
+        <ImageView
+            android:id="@+id/gre"
+            android:layout_width="100dp"
+            android:layout_height="185dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="312dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/gregif" />
+
+        <ImageView
+            android:id="@+id/tra"
+            android:layout_width="401dp"
+            android:layout_height="704dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="124dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="-97dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/tragif" />
+
+        <TextView
+            android:id="@+id/suc"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="457dp"
+            android:text="恭喜成功完成!"
+            android:textColor="#62B5AD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/sound2"
+            android:layout_width="58dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="505dp"
+            android:background="#00FFFFFF"
+            android:onClick="StartPlay"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/trumpet"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+
+        <ImageButton
+            android:id="@+id/sound3"
+            android:layout_width="65dp"
+            android:layout_height="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="269dp"
+            android:layout_marginBottom="431dp"
+            android:background="#00FFFFFF"
+            android:onClick="StartPlay"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/trumpet"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/sound1"
+            android:layout_width="52dp"
+            android:layout_height="39dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="151dp"
+            android:layout_marginBottom="163dp"
+            android:background="#00FFFFFF"
+            android:onClick="StartPlay"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/trumpet"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -28,6 +28,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="251dp"
             android:layout_marginBottom="76dp"
+            android:onClick="StartPlay"
             android:text="1000"
             app:backgroundTint="#7E3A25"
             tools:ignore="TouchTargetSizeCheck" />
@@ -40,6 +41,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="252dp"
             android:layout_marginBottom="36dp"
+            android:onClick="StartPlay"
             android:text="100"
             app:backgroundTint="#7E3A25"
             tools:ignore="TouchTargetSizeCheck" />
@@ -52,6 +54,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="162dp"
             android:layout_marginBottom="76dp"
+            android:onClick="StartPlay"
             android:text="50"
             app:backgroundTint="#7E3A25" />
 
@@ -63,6 +66,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="162dp"
             android:layout_marginBottom="36dp"
+            android:onClick="StartPlay"
             android:text="10"
             app:backgroundTint="#7E3A25" />
 
@@ -74,6 +78,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="72dp"
             android:layout_marginBottom="76dp"
+            android:onClick="StartPlay"
             android:text="5"
             app:backgroundTint="#7E3A25" />
 
@@ -85,7 +90,22 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="72dp"
             android:layout_marginBottom="36dp"
+            android:onClick="StartPlay"
             android:text="1"
             app:backgroundTint="#7E3A25" />
+
+        <ImageButton
+            android:id="@+id/homepage1"
+            android:layout_width="91dp"
+            android:layout_height="74dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-11dp"
+            android:layout_marginBottom="2dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/home"
+            tools:ignore="SpeakableTextPresentCheck" />
     </RelativeLayout>
 </LinearLayout>
+

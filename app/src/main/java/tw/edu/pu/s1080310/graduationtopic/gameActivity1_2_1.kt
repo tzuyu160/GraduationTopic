@@ -3,6 +3,8 @@ package tw.edu.pu.s1080310.graduationtopic
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
+import android.media.AudioManager
+import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MotionEvent
@@ -13,15 +15,25 @@ import kotlinx.android.synthetic.main.activity_game1_2_1.*
 import kotlinx.android.synthetic.main.activity_game1_2_1.draw_view1
 import kotlinx.android.synthetic.main.activity_game1_2_1.eraser
 import org.tensorflow.lite.support.image.TensorImage
-import tw.edu.pu.s1080310.graduationtopic.ml.Shapemodel
+import tw.edu.pu.s1080310.graduationtopic.ml.Shapemodel1
 
 
 class gameActivity1_2_1 : AppCompatActivity(),
     View.OnClickListener, View.OnTouchListener {
+
+    private var soundPool1: SoundPool? = null
+    private val soundId = 1
+    private var soundPool2: SoundPool? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game1_2_1)
         getSupportActionBar()?.hide();
+
+        soundPool1 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
+        soundPool1!!.load(baseContext, R.raw.yes, 0)
+
+        soundPool2 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
+        soundPool2!!.load(baseContext, R.raw.wrong1, 1)
 
 
         eraser.setOnClickListener(this)
@@ -55,7 +67,7 @@ class gameActivity1_2_1 : AppCompatActivity(),
 
 
 
-        val model = Shapemodel.newInstance(this)
+        val model = Shapemodel1.newInstance(this)
 
 
         val image = TensorImage.fromBitmap(bitmap)
@@ -82,22 +94,25 @@ class gameActivity1_2_1 : AppCompatActivity(),
 
 
         if(Result=="圓形"&&outputs[0].score * 100.0f>30) {
-
+            soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
             intent = Intent(this@gameActivity1_2_1, gameActivity1_2_2::class.java)
             startActivity(intent)
             finish()
-        }
 
-        Result += ": " + String.format("%.1f%%", outputs[0].score * 100.0f)
+            Result += ": " + String.format("%.1f%%", outputs[0].score * 100.0f)
+            Toast.makeText(this, Result, Toast.LENGTH_SHORT).show()
+
+        }else {
+            Toast.makeText(baseContext, "答錯", Toast.LENGTH_SHORT).show()
+            soundPool2?.play(soundId, 1F, 1F, 0, 0, 1F)
+        }
 
 
 
         model.close()
-        Toast.makeText(this, Result, Toast.LENGTH_SHORT).show()
+
 
     }
-
-
 
 
 }

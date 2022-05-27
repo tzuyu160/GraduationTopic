@@ -4,41 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".gameActivity1_2_3">
+    tools:context=".gameActivity2_2_1">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <com.divyanshu.draw.widget.DrawView
-            android:id="@+id/draw_view2"
+            android:id="@+id/draw_view4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <ImageButton
-            android:id="@+id/eraser2"
+            android:id="@+id/eraser3"
             android:layout_width="63dp"
             android:layout_height="67dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="292dp"
+            android:layout_marginEnd="293dp"
             android:layout_marginBottom="532dp"
             android:background="#00FFFFFF"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/eraser"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="274dp"
-            android:layout_height="343dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="61dp"
-            android:layout_marginEnd="61dp"
-            android:layout_marginBottom="118dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/circle" />
     </RelativeLayout>
 </LinearLayout>

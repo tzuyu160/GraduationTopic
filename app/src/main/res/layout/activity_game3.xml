@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gameActivity3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/drawbackground" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="248dp"
+            android:layout_height="206dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginEnd="89dp"
+            android:layout_marginBottom="203dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/hospital" />
+
+        <ImageButton
+            android:id="@+id/light3"
+            android:layout_width="56dp"
+            android:layout_height="69dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="261dp"
+            android:layout_marginBottom="444dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/light"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/pencialbox4"
+            android:layout_width="79dp"
+            android:layout_height="67dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="57dp"
+            android:layout_marginBottom="160dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/pencilbox"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+</LinearLayout>
