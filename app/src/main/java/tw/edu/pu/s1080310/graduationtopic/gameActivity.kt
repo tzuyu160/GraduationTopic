@@ -14,6 +14,8 @@ import android.widget.Toast
 
 import android.content.DialogInterface
 import androidx.appcompat.app.AlertDialog
+import kotlinx.android.synthetic.main.activity_game2_4.*
+import kotlinx.android.synthetic.main.activity_game3_4.*
 
 
 class gameActivity : AppCompatActivity() {
@@ -25,7 +27,7 @@ class gameActivity : AppCompatActivity() {
 
         val img1:ImageView = findViewById(R.id.img1)
         GlideApp.with(this)
-            .load(R.drawable.paintbackground)
+            .load(R.drawable.pbg1)
             .into(img1)
 
         money.setOnClickListener(object : View.OnClickListener {
@@ -50,6 +52,12 @@ class gameActivity : AppCompatActivity() {
                 startActivity(intent)
 
             }
+        })
+
+        homepage4.setOnClickListener(View.OnClickListener {
+            val intent = Intent()
+            intent.setClass(this@gameActivity, tw.edu.pu.s1080310.graduationtopic.MainActivity::class.java)
+            startActivity(intent)
         })
     }
 

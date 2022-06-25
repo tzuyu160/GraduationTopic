@@ -18,7 +18,7 @@
             android:layout_marginLeft="0dip"
             android:layout_marginTop="0dip"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/paintbackground" />
+            app:srcCompat="@drawable/pbg1" />
 
         <ImageButton
             android:id="@+id/money"
@@ -26,8 +26,8 @@
             android:layout_height="45dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="129dp"
-            android:layout_marginBottom="379dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="410dp"
             android:background="#00FFFFFF"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/money"
@@ -52,11 +52,51 @@
             android:layout_height="88dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="148dp"
-            android:layout_marginBottom="149dp"
+            android:layout_marginEnd="141dp"
+            android:layout_marginBottom="123dp"
             android:background="#00FFFFFF"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/hospital"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/homepage4"
+            android:layout_width="64dp"
+            android:layout_height="71dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="241dp"
+            android:layout_marginBottom="18dp"
+            android:background="#00DACCCC"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/home1"
+
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="64dp"
+            android:layout_height="71dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="151dp"
+            android:layout_marginBottom="18dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ani4"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="64dp"
+            android:layout_height="71dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="61dp"
+            android:layout_marginBottom="18dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/game"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </RelativeLayout>

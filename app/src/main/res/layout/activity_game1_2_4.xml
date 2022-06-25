@@ -18,7 +18,83 @@
             android:layout_marginLeft="0dip"
             android:layout_marginTop="0dip"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/game1final" />
+            app:srcCompat="@drawable/hi" />
+
+        <ImageView
+            android:id="@+id/fyd"
+            android:layout_width="86dp"
+            android:layout_height="93dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="115dp"
+            android:layout_marginBottom="481dp"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/fyd" />
+
+        <ImageView
+            android:id="@+id/ohd"
+            android:layout_width="168dp"
+            android:layout_height="131dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="224dp"
+            android:layout_marginBottom="358dp"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ohd" />
+
+        <ImageView
+            android:id="@+id/fd"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="479dp"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/fd" />
+
+        <ImageView
+            android:id="@+id/otd"
+            android:layout_width="182dp"
+            android:layout_height="171dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="213dp"
+            android:layout_marginBottom="435dp"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/otd" />
+
+        <ImageView
+            android:id="@+id/od"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="397dp"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/od" />
+
+        <ImageView
+            android:id="@+id/td"
+            android:layout_width="81dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="392dp"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/td" />
 
         <Button
             android:id="@+id/NT1000"
@@ -82,6 +158,20 @@
             android:text="5"
             app:backgroundTint="#7E3A25" />
 
+        <ImageButton
+            android:id="@+id/pencil"
+            android:layout_width="44dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="46dp"
+            android:background="#C9D1C9C9"
+            android:backgroundTint="#469C9898"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/pencil"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
         <Button
             android:id="@+id/NT1"
             android:layout_width="wrap_content"
@@ -96,16 +186,17 @@
 
         <ImageButton
             android:id="@+id/homepage1"
-            android:layout_width="91dp"
-            android:layout_height="74dp"
+            android:layout_width="44dp"
+            android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="-11dp"
-            android:layout_marginBottom="2dp"
-            android:background="#00FFFFFF"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="1dp"
+            android:background="#C9D1C9C9"
+            android:backgroundTint="#469C9898"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/home"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </RelativeLayout>
 </LinearLayout>
 

@@ -16,6 +16,7 @@ import kotlinx.android.synthetic.main.activity_game1.*
 import kotlinx.android.synthetic.main.activity_game1_1.*
 import kotlinx.android.synthetic.main.activity_main.*
 import org.tensorflow.lite.support.image.TensorImage
+import tw.edu.pu.s1080310.graduationtopic.ml.Newshape
 
 import tw.edu.pu.s1080310.graduationtopic.ml.Shapemodel1
 
@@ -70,7 +71,7 @@ class gameActivity1_1 : AppCompatActivity(),
     fun classifyDrawing(bitmap: Bitmap) {
 
 
-        val model = Shapemodel1.newInstance(this)
+        val model = Newshape.newInstance(this)
 
 
         val image = TensorImage.fromBitmap(bitmap)

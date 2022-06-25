@@ -13,6 +13,7 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_game3_2_1.*
 import kotlinx.android.synthetic.main.activity_game3_3_1.*
 import org.tensorflow.lite.support.image.TensorImage
+import tw.edu.pu.s1080310.graduationtopic.ml.Newshape
 import tw.edu.pu.s1080310.graduationtopic.ml.Shapemodel1
 
 class gameActivity3_3_1 : AppCompatActivity(),
@@ -63,7 +64,7 @@ class gameActivity3_3_1 : AppCompatActivity(),
 
 
 
-        val model = Shapemodel1.newInstance(this)
+        val model = Newshape.newInstance(this)
 
 
         val image = TensorImage.fromBitmap(bitmap)

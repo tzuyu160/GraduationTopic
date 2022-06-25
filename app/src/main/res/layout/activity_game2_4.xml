@@ -112,6 +112,34 @@
             app:srcCompat="@drawable/trumpet"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
+        <ImageButton
+            android:id="@+id/homepage2"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="303dp"
+            android:layout_marginBottom="574dp"
+            android:background="#C9D1C9C9"
+            android:backgroundTint="#469C9898"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/home"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/pencil1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="259dp"
+            android:layout_marginBottom="574dp"
+            android:background="#C9D1C9C9"
+            android:backgroundTint="#469C9898"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/pencil"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
     </RelativeLayout>
 
 </LinearLayout>

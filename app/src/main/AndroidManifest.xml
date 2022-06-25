@@ -2,13 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tw.edu.pu.s1080310.graduationtopic">
 
+
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/role"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/role"
         android:supportsRtl="true"
         android:theme="@style/Theme.GraduationTopic">
         <activity
@@ -82,9 +83,6 @@
             android:exported="true" />
         <activity
             android:name=".gameActivity1"
-            android:exported="true" />
-        <activity
-            android:name=".fingerActivity"
             android:exported="true" />
         <activity
             android:name=".gameActivity"

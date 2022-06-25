@@ -3,13 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/drawable/buttonstyle.xml" value="0.15462962962962962" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/drawable/maincolor.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_ani1.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_ani2.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_ani3.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_animation.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_finger.xml" value="0.223731884057971" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game121.xml" value="0.1816123188405797" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_1.xml" value="0.25364583333333335" />
@@ -18,7 +19,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_2_1.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_2_2.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_2_3.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_2_4.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_2_4.xml" value="0.4" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game2.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game2_1.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game2_2.xml" value="0.1" />
