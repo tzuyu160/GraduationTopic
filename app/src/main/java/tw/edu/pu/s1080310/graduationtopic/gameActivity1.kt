@@ -42,12 +42,7 @@ class gameActivity1 : AppCompatActivity() {
                 alertDialog.setMessage("點擊下方筆筒進入繪圖區，沿圖案虛線進行描繪")
                 alertDialog.setPositiveButton("確定",
                     DialogInterface.OnClickListener { dialog, which ->
-                        Toast.makeText(
-                            baseContext,
-                            "確定",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    })
+                        Toast.makeText(baseContext, "確定", Toast.LENGTH_SHORT).show() })
                 alertDialog.setCancelable(false)
                 alertDialog.show()
 

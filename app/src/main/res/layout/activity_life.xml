@@ -5,62 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".animationActivity">
+    tools:context=".life">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/img6"
+            android:id="@+id/fungame1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="0dip"
             android:layout_marginTop="0dip"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/pbg2" />
+            app:srcCompat="@drawable/life" />
 
         <ImageButton
-            android:id="@+id/architecture"
-            android:layout_width="144dp"
-            android:layout_height="97dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="106dp"
-            android:layout_marginBottom="387dp"
-            android:background="#00FFFFFF"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/architecture"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/trafic"
-            android:layout_width="127dp"
-            android:layout_height="81dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="117dp"
-            android:layout_marginBottom="262dp"
-            android:background="#00FFFFFF"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/trafic"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/money1"
-            android:layout_width="109dp"
-            android:layout_height="52dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="123dp"
-            android:layout_marginBottom="140dp"
-            android:background="#00FFFFFF"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/money"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/homepage"
+            android:id="@+id/homepage5"
             android:layout_width="64dp"
             android:layout_height="71dp"
             android:layout_alignParentEnd="true"
@@ -70,23 +31,10 @@
             android:background="#00DACCCC"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/home1"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck,ImageContrastCheck" />
 
         <ImageButton
-            android:id="@+id/game2"
-            android:layout_width="64dp"
-            android:layout_height="71dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="61dp"
-            android:layout_marginBottom="18dp"
-            android:background="#00FFFFFF"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/game"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/pencil3"
+            android:id="@+id/pencil4"
             android:layout_width="64dp"
             android:layout_height="71dp"
             android:layout_alignParentEnd="true"
@@ -98,6 +46,30 @@
             app:srcCompat="@drawable/pencil1"
             tools:ignore="SpeakableTextPresentCheck" />
 
-    </RelativeLayout>
+        <ImageButton
+            android:id="@+id/ani5"
+            android:layout_width="64dp"
+            android:layout_height="71dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="61dp"
+            android:layout_marginBottom="18dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ani4"
+            tools:ignore="SpeakableTextPresentCheck" />
 
+        <ImageButton
+            android:id="@+id/gift"
+            android:layout_width="64dp"
+            android:layout_height="71dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="377dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/gift"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
 </LinearLayout>

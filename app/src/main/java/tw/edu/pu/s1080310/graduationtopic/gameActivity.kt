@@ -59,7 +59,22 @@ class gameActivity : AppCompatActivity() {
             intent.setClass(this@gameActivity, tw.edu.pu.s1080310.graduationtopic.MainActivity::class.java)
             startActivity(intent)
         })
+
+        ani4.setOnClickListener(View.OnClickListener {
+            val intent = Intent()
+            intent.setClass(this@gameActivity, tw.edu.pu.s1080310.graduationtopic.animationActivity::class.java)
+            startActivity(intent)
+        })
+
+
+        game1.setOnClickListener(View.OnClickListener {
+            val intent = Intent()
+            intent.setClass(this@gameActivity, tw.edu.pu.s1080310.graduationtopic.life::class.java)
+            startActivity(intent)
+        })
     }
+
+
 
 
 

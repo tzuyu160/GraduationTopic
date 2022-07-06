@@ -41,6 +41,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         })
 
-
+        life.setOnClickListener(View.OnClickListener {
+            val intent = Intent()
+            intent.setClass(this@MainActivity, tw.edu.pu.s1080310.graduationtopic.life::class.java)
+            startActivity(intent)
+        })
     }
 }

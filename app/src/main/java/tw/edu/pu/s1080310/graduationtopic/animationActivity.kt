@@ -29,7 +29,7 @@ class animationActivity : AppCompatActivity() {
 
         val img6: ImageView = findViewById(R.id.img6)
         GlideApp.with(this)
-            .load(R.drawable.anibackground)
+            .load(R.drawable.pbg2)
             .into(img6)
 
 
@@ -53,15 +53,24 @@ class animationActivity : AppCompatActivity() {
             startActivity(intent)
         })
 
-        homepage.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(p0: View?) {
-                this@animationActivity.finish()
+        homepage.setOnClickListener(View.OnClickListener {
+            val intent = Intent()
+            intent.setClass(this@animationActivity, tw.edu.pu.s1080310.graduationtopic.MainActivity::class.java)
+            startActivity(intent)
+        })
 
-            }
-
+        pencil3.setOnClickListener(View.OnClickListener {
+            val intent = Intent()
+            intent.setClass(this@animationActivity, tw.edu.pu.s1080310.graduationtopic.gameActivity::class.java)
+            startActivity(intent)
         })
 
 
+        game2.setOnClickListener(View.OnClickListener {
+            val intent = Intent()
+            intent.setClass(this@animationActivity, tw.edu.pu.s1080310.graduationtopic.life::class.java)
+            startActivity(intent)
+        })
 
     }
 

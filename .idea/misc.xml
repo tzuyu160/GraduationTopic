@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/drawable/bg.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/drawable/buttonstyle.xml" value="0.15462962962962962" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/drawable/maincolor.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_ani1.xml" value="0.264" />
@@ -34,6 +35,17 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game3_3.xml" value="0.2390625" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game3_3_1.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game3_4.xml" value="0.20606884057971014" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life.xml" value="0.2477355072463768" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1.xml" value="0.2246376811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1_1.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1_2.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1_3.xml" value="0.21195652173913043" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1_4.xml" value="0.21195652173913043" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1_5.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1_6.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1_7.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1_8.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1_9.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/film_item.xml" value="0.4" />
       </map>

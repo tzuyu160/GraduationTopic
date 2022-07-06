@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".life1_7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/change7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/change" />
+
+        <ImageView
+            android:id="@+id/fungame2"
+            android:layout_width="200dp"
+            android:layout_height="147dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="401dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/fungame1" />
+
+        <ImageButton
+            android:id="@+id/otd7"
+            android:layout_width="118dp"
+            android:layout_height="54dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="212dp"
+            android:layout_marginBottom="261dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/otd"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/fhd6"
+            android:layout_width="118dp"
+            android:layout_height="54dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="211dp"
+            android:layout_marginBottom="199dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/fhd"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/ohd7"
+            android:layout_width="118dp"
+            android:layout_height="54dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="211dp"
+            android:layout_marginBottom="137dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ohd"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/fyd7"
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="113dp"
+            android:layout_marginBottom="218dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/fyd"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/td7"
+            android:layout_width="70dp"
+            android:layout_height="66dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="112dp"
+            android:layout_marginBottom="140dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/td"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/fd7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="218dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/fd"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/od7"
+            android:layout_width="58dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="143dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/od"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/txv6"
+            style="@android:style/Widget.Holo.Light.TextView"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="87dp"
+            android:layout_marginBottom="21dp"
+            android:gravity="center|start"
+            android:scaleType="centerInside"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/cart6"
+            android:layout_width="70dp"
+            android:layout_height="59dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="25dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/cart"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/trash6"
+            android:layout_width="70dp"
+            android:layout_height="59dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="271dp"
+            android:layout_marginBottom="25dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/trash"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/back10"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="322dp"
+            android:layout_marginBottom="571dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/back"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </RelativeLayout>
+</LinearLayout>
