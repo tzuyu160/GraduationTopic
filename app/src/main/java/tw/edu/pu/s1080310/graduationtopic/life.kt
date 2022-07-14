@@ -41,6 +41,15 @@ class life : AppCompatActivity() {
             }
         })
 
+        head.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
+                intent = Intent(this@life, life2::class.java)
+                startActivity(intent)
+                finish()
+            }
+        })
+
 
         homepage5.setOnClickListener(View.OnClickListener {
             soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)

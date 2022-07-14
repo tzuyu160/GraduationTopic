@@ -71,5 +71,18 @@
             android:scaleType="centerInside"
             app:srcCompat="@drawable/gift"
             tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/head"
+            android:layout_width="64dp"
+            android:layout_height="71dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="256dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/head"
+            tools:ignore="SpeakableTextPresentCheck" />
     </RelativeLayout>
 </LinearLayout>

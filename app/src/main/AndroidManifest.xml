@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GraduationTopic">
         <activity
+            android:name=".life2"
+            android:exported="true" />
+        <activity
             android:name=".life1_9"
             android:exported="true" />
         <activity
