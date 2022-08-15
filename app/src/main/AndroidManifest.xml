@@ -12,6 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GraduationTopic">
         <activity
+            android:name=".life2_8"
+            android:exported="true" />
+        <activity
+            android:name=".life2_7"
+            android:exported="true" />
+        <activity
+            android:name=".life2_6"
+            android:exported="true" />
+        <activity
+            android:name=".life2_5"
+            android:exported="true" />
+        <activity
+            android:name=".life2_4"
+            android:exported="true" />
+        <activity
+            android:name=".life2_3"
+            android:exported="true" />
+        <activity
+            android:name=".life2_2"
+            android:exported="true" />
+        <activity
+            android:name=".life2_1"
+            android:exported="true" />
+        <activity
             android:name=".life2"
             android:exported="true" />
         <activity

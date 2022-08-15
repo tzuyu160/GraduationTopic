@@ -4,68 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".life2">
+    tools:context=".life2_2"
+    android:orientation="horizontal">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <ImageView
-            android:id="@+id/lpg"
+            android:id="@+id/lpg2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/challenge" />
 
         <ImageView
-            android:id="@+id/img18"
-            android:layout_width="254dp"
-            android:layout_height="237dp"
+            android:id="@+id/hospital1"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="55dp"
-            android:layout_marginBottom="220dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/police1" />
-
-        <ImageButton
-            android:id="@+id/bike"
-            android:layout_width="120dp"
-            android:layout_height="73dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="118dp"
-            android:layout_marginBottom="103dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="242dp"
             android:background="#00FFFFFF"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/bike1"
+            app:srcCompat="@drawable/hospital1"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/policecar"
-            android:layout_width="129dp"
-            android:layout_height="70dp"
+            android:id="@+id/ambulance1"
+            android:layout_width="140dp"
+            android:layout_height="77dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="195dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="114dp"
+            android:layout_marginBottom="97dp"
             android:background="#00FFFFFF"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/policecar"
+            app:srcCompat="@drawable/ambulance"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/bus"
-            android:layout_width="127dp"
-            android:layout_height="75dp"
+            android:id="@+id/ship"
+            android:layout_width="139dp"
+            android:layout_height="82dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="42dp"
-            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="212dp"
+            android:layout_marginBottom="15dp"
             android:background="#00FFFFFF"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/bus"
+            app:srcCompat="@drawable/ship"
             tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/taxi"
+            android:layout_width="170dp"
+            android:layout_height="78dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/taxi"
+            tools:ignore="SpeakableTextPresentCheck" />
+
 
     </RelativeLayout>
 </LinearLayout>

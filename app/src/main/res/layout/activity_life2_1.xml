@@ -4,68 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".life2">
+    tools:context=".life2_1">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/lpg"
+            android:id="@+id/lpg1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/challenge" />
 
         <ImageView
-            android:id="@+id/img18"
-            android:layout_width="254dp"
-            android:layout_height="237dp"
+            android:id="@+id/imageView5"
+            android:layout_width="271dp"
+            android:layout_height="141dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="55dp"
-            android:layout_marginBottom="220dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="251dp"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/police1" />
+            app:srcCompat="@drawable/busstop" />
 
         <ImageButton
-            android:id="@+id/bike"
-            android:layout_width="120dp"
-            android:layout_height="73dp"
+            android:id="@+id/ambulance"
+            android:layout_width="140dp"
+            android:layout_height="77dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="118dp"
-            android:layout_marginBottom="103dp"
+            android:layout_marginEnd="117dp"
+            android:layout_marginBottom="96dp"
             android:background="#00FFFFFF"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/bike1"
+            app:srcCompat="@drawable/ambulance"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/policecar"
-            android:layout_width="129dp"
-            android:layout_height="70dp"
+            android:id="@+id/truck"
+            android:layout_width="146dp"
+            android:layout_height="71dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="195dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="198dp"
+            android:layout_marginBottom="22dp"
             android:background="#00FFFFFF"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/policecar"
+            app:srcCompat="@drawable/car"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/bus"
-            android:layout_width="127dp"
-            android:layout_height="75dp"
+            android:id="@+id/bus1"
+            android:layout_width="157dp"
+            android:layout_height="68dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="42dp"
-            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="19dp"
             android:background="#00FFFFFF"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/bus"
             tools:ignore="SpeakableTextPresentCheck" />
-
     </RelativeLayout>
 </LinearLayout>

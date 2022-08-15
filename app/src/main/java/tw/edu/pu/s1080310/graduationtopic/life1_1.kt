@@ -68,6 +68,7 @@ class life1_1 : AppCompatActivity(),View.OnClickListener {
             od1  -> counter+=1
             trash -> counter=0
             }
+
         soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
         txv.text = counter.toString()
 
@@ -93,7 +94,7 @@ class life1_1 : AppCompatActivity(),View.OnClickListener {
                     )
                 }else if (counter>231){
                     paymoney = counter-total
-                alertDialog.setMessage("哇!!!給太多了多出" + paymoney + "元")
+                alertDialog.setMessage("找您" + paymoney + "元")
                     alertDialog.setPositiveButton("確定", { dialog, which ->
                         soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
                     })
