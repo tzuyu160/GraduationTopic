@@ -43,8 +43,8 @@
 
         <ImageButton
             android:id="@+id/train3"
-            android:layout_width="212dp"
-            android:layout_height="98dp"
+            android:layout_width="195dp"
+            android:layout_height="93dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="84dp"
@@ -56,8 +56,8 @@
 
         <ImageButton
             android:id="@+id/ship3"
-            android:layout_width="140dp"
-            android:layout_height="83dp"
+            android:layout_width="121dp"
+            android:layout_height="80dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="206dp"

@@ -2,41 +2,35 @@ package tw.edu.pu.s1080310.graduationtopic
 
 import android.content.DialogInterface
 import android.content.Intent
-import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import kotlinx.android.synthetic.main.activity_life2_2.*
-import kotlinx.android.synthetic.main.activity_life2_3.*
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
+import kotlinx.android.synthetic.main.activity_life2_8.*
 
-class life2_3 : AppCompatActivity() , View.OnClickListener{
-
-    private var soundPool2: SoundPool? = null
-    private val soundId = 1
-
-
+class life2_8 : AppCompatActivity() , View.OnClickListener{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_life2_3)
+        setContentView(R.layout.activity_life2_8)
         getSupportActionBar()?.hide();
 
 
-        policecar1.setOnClickListener(this)
-        bike1.setOnClickListener(this)
-        train.setOnClickListener(this)
+
+        train4.setOnClickListener(this)
+        subway.setOnClickListener(this)
+        trashcar2.setOnClickListener(this)
 
 
-
-
-        policecar1.setOnClickListener(object : View.OnClickListener {
+        subway.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 val alertDialog: android.app.AlertDialog.Builder =
-                    android.app.AlertDialog.Builder(this@life2_3)
+                    android.app.AlertDialog.Builder(this@life2_8)
 
-                alertDialog.setMessage("太棒了!!! 選對了，此交通工具為警車 ")
+                alertDialog.setMessage("太棒了!!! 選對了，此交通工具為捷運 ")
                 alertDialog.setPositiveButton("繼續闖關",
                     DialogInterface.OnClickListener { dialog, which ->
-                        intent = Intent(this@life2_3, life2_4::class.java)
+                        intent = Intent(this@life2_8, life2_9::class.java)
                         startActivity(intent)
                         finish()
                     })
@@ -47,27 +41,10 @@ class life2_3 : AppCompatActivity() , View.OnClickListener{
         })
 
 
-        bike1.setOnClickListener(object : View.OnClickListener {
+        train4.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 val alertDialog: android.app.AlertDialog.Builder =
-                    android.app.AlertDialog.Builder(this@life2_3)
-
-                alertDialog.setMessage("此交通工具為腳踏車")
-                alertDialog.setPositiveButton("繼續選答",
-                    DialogInterface.OnClickListener { dialog, which ->
-
-                    })
-                alertDialog.setCancelable(false)
-                alertDialog.show()
-
-            }
-        })
-
-
-        train.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(p0: View?) {
-                val alertDialog: android.app.AlertDialog.Builder =
-                    android.app.AlertDialog.Builder(this@life2_3)
+                    android.app.AlertDialog.Builder(this@life2_8)
 
                 alertDialog.setMessage("此交通工具為火車")
                 alertDialog.setPositiveButton("繼續選答",
@@ -80,10 +57,35 @@ class life2_3 : AppCompatActivity() , View.OnClickListener{
             }
         })
 
+        trashcar2.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                val alertDialog: android.app.AlertDialog.Builder =
+                    android.app.AlertDialog.Builder(this@life2_8)
 
+                alertDialog.setMessage("此交通工具為垃圾車")
+                alertDialog.setPositiveButton("繼續選答",
+                    DialogInterface.OnClickListener { dialog, which ->
+
+                    })
+                alertDialog.setCancelable(false)
+                alertDialog.show()
+
+            }
+        })
     }
+
+
 
     override fun onClick(p0: View?) {
 
     }
 }
+
+
+
+
+
+
+
+
+
