@@ -17,6 +17,10 @@ class life : AppCompatActivity() {
     private var soundPool1: SoundPool? = null
     private val soundId = 1
 
+    private var soundPool2: SoundPool? = null
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_life)
@@ -25,6 +29,9 @@ class life : AppCompatActivity() {
 
         soundPool1 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
         soundPool1!!.load(baseContext, R.raw.point, 0)
+        soundPool2 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
+        soundPool2!!.load(baseContext, R.raw.open, 0)
+
 
         val fungame1: ImageView = findViewById(R.id.fungame1)
         GlideApp.with(this)
@@ -34,7 +41,7 @@ class life : AppCompatActivity() {
 
         gift.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
-                soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
+                soundPool2?.play(soundId, 1F, 1F, 0, 0, 1F)
                 intent = Intent(this@life, life1::class.java)
                 startActivity(intent)
                 finish()
@@ -44,7 +51,7 @@ class life : AppCompatActivity() {
         head.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
-                intent = Intent(this@life, life2::class.java)
+                intent = Intent(this@life, liferule2::class.java)
                 startActivity(intent)
                 finish()
             }

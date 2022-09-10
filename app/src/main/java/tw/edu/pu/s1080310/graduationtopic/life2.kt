@@ -36,6 +36,7 @@ class life2 : AppCompatActivity(), View.OnClickListener {
 
 
 
+    private var soundPool1: SoundPool? = null
     private var soundPool2: SoundPool? = null
     private val soundId = 1
 
@@ -50,9 +51,10 @@ class life2 : AppCompatActivity(), View.OnClickListener {
         policecar.setOnClickListener(this)
         bus.setOnClickListener(this)
 
+        soundPool1 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
+        soundPool1!!.load(baseContext, R.raw.correct, 1)
         soundPool2 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
-        soundPool2!!.load(baseContext, R.raw.correct, 1)
-
+        soundPool2!!.load(baseContext, R.raw.wrong1, 1)
 
 
 
@@ -62,6 +64,7 @@ class life2 : AppCompatActivity(), View.OnClickListener {
                     android.app.AlertDialog.Builder(this@life2)
 
                 alertDialog.setMessage("太棒了!!! 選對了，此交通工具為警車")
+                soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
                 alertDialog.setPositiveButton("繼續闖關",
                     DialogInterface.OnClickListener { dialog, which ->
                         intent = Intent(this@life2, life2_1::class.java)
@@ -82,6 +85,7 @@ class life2 : AppCompatActivity(), View.OnClickListener {
                     android.app.AlertDialog.Builder(this@life2)
 
                 alertDialog.setMessage("此交通工具為腳踏車")
+                soundPool2?.play(soundId, 1F, 1F, 0, 0, 1F)
                 alertDialog.setPositiveButton("繼續選答",
                     DialogInterface.OnClickListener { dialog, which ->
 
@@ -98,6 +102,7 @@ class life2 : AppCompatActivity(), View.OnClickListener {
                     android.app.AlertDialog.Builder(this@life2)
 
                 alertDialog.setMessage("此交通工具為公車")
+                soundPool2?.play(soundId, 1F, 1F, 0, 0, 1F)
                 alertDialog.setPositiveButton("繼續選答",
                     DialogInterface.OnClickListener { dialog, which -> })
                 alertDialog.setNegativeButton("\uD83D\uDD0A",

@@ -82,6 +82,7 @@ class gameActivity1_2_1 : AppCompatActivity(),
             .probabilityAsCategoryList.apply {
                 sortByDescending { it.score } // 排序，高匹配率優先
             }.take(1)  //取最高的1個
+
         var Result: String = ""
         when (outputs[0].label) {
             "長方形" -> Result = "長方形"

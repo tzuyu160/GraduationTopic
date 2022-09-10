@@ -18,7 +18,7 @@
             app:srcCompat="@drawable/challenge" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/mrt"
             android:layout_width="288dp"
             android:layout_height="182dp"
             android:layout_alignParentEnd="true"

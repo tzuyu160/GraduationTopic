@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tw.edu.pu.s1080310.graduationtopic">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
@@ -11,6 +16,15 @@
         android:roundIcon="@drawable/role"
         android:supportsRtl="true"
         android:theme="@style/Theme.GraduationTopic">
+        <activity
+            android:name=".life2_11"
+            android:exported="true" />
+        <activity
+            android:name=".liferule2"
+            android:exported="true" />
+        <activity
+            android:name=".life2_10"
+            android:exported="true" />
         <activity
             android:name=".life2_9"
             android:exported="true" />
