@@ -20,13 +20,26 @@
             app:srcCompat="@drawable/lbg" />
 
         <ImageButton
+            android:id="@+id/stack"
+            android:layout_width="93dp"
+            android:layout_height="94dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="101dp"
+            android:layout_marginBottom="478dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/stack"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
             android:id="@+id/pen"
             android:layout_width="64dp"
             android:layout_height="53dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="272dp"
-            android:layout_marginBottom="416dp"
+            android:layout_marginEnd="276dp"
+            android:layout_marginBottom="478dp"
             android:background="#00FFFFFF"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/pen"
@@ -38,37 +51,11 @@
             android:layout_height="98dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="207dp"
-            android:layout_marginBottom="416dp"
+            android:layout_marginEnd="210dp"
+            android:layout_marginBottom="475dp"
             android:background="#00FFFFFF"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/icecream"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/stack"
-            android:layout_width="93dp"
-            android:layout_height="94dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="97dp"
-            android:layout_marginBottom="416dp"
-            android:background="#00FFFFFF"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/stack"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/paint"
-            android:layout_width="140dp"
-            android:layout_height="92dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="230dp"
-            android:layout_marginBottom="233dp"
-            android:background="#00FFFFFF"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/paint"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -77,8 +64,8 @@
             android:layout_height="82dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="115dp"
-            android:layout_marginBottom="252dp"
+            android:layout_marginEnd="119dp"
+            android:layout_marginBottom="289dp"
             android:background="#00FFFFFF"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/bear"
@@ -90,37 +77,24 @@
             android:layout_height="90dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="19dp"
-            android:layout_marginBottom="252dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="289dp"
             android:background="#00FFFFFF"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/ball"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/fungame"
-            android:layout_width="63dp"
-            android:layout_height="97dp"
+            android:id="@+id/paint"
+            android:layout_width="140dp"
+            android:layout_height="92dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="265dp"
-            android:layout_marginBottom="74dp"
+            android:layout_marginEnd="230dp"
+            android:layout_marginBottom="281dp"
             android:background="#00FFFFFF"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/fungame"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/robot"
-            android:layout_width="75dp"
-            android:layout_height="115dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="180dp"
-            android:layout_marginBottom="74dp"
-            android:background="#00FFFFFF"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/robot"
+            app:srcCompat="@drawable/paint"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -130,10 +104,36 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="33dp"
-            android:layout_marginBottom="74dp"
+            android:layout_marginBottom="85dp"
             android:background="#00FFFFFF"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/car"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/robot"
+            android:layout_width="75dp"
+            android:layout_height="115dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="180dp"
+            android:layout_marginBottom="85dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/robot"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/fungame"
+            android:layout_width="63dp"
+            android:layout_height="97dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="265dp"
+            android:layout_marginBottom="85dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/fungame"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
@@ -142,8 +142,8 @@
             android:layout_height="48dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="297dp"
-            android:layout_marginBottom="526dp"
+            android:layout_marginEnd="299dp"
+            android:layout_marginBottom="613dp"
             android:background="#00FFFFFF"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/back"

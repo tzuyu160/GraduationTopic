@@ -7,10 +7,12 @@ import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_life2.*
 import kotlinx.android.synthetic.main.activity_life2_1.*
 import kotlinx.android.synthetic.main.activity_life2_2.*
 import kotlinx.android.synthetic.main.activity_life2_3.*
 import java.util.*
+import kotlin.concurrent.schedule
 
 class life2_3 : AppCompatActivity() , View.OnClickListener{
 
@@ -41,7 +43,14 @@ class life2_3 : AppCompatActivity() , View.OnClickListener{
         soundPool4 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
         soundPool4!!.load(baseContext, R.raw.point, 0)
 
+        camera3.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                intent = Intent(this@life2_3, cam4::class.java)
+                startActivity(intent)
+                finish()
 
+            }
+        })
 
         bike1.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
@@ -51,9 +60,9 @@ class life2_3 : AppCompatActivity() , View.OnClickListener{
 
                 alertDialog.setMessage("太棒了!!! 選對了，此交通工具為腳踏車 ")
                 soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
-
+                Timer().schedule(1000) {
                     soundPool3?.play(soundId, 1F, 1F, 0, 0, 1F)
-
+                }
                 alertDialog.setPositiveButton("繼續闖關",
                     DialogInterface.OnClickListener { dialog, which ->
                         soundPool4?.play(soundId, 1F, 1F, 1, 0, 1F)

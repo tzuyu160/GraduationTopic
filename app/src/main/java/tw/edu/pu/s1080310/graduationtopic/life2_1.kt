@@ -44,7 +44,14 @@ class life2_1 : AppCompatActivity() , View.OnClickListener{
         soundPool4 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
         soundPool4!!.load(baseContext, R.raw.point, 0)
 
+        camera1.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                intent = Intent(this@life2_1, cam2::class.java)
+                startActivity(intent)
+                finish()
 
+            }
+        })
 
 
         bus1.setOnClickListener(object : View.OnClickListener {

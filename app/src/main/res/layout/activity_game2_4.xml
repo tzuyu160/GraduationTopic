@@ -46,14 +46,14 @@
 
         <ImageView
             android:id="@+id/tra"
-            android:layout_width="401dp"
-            android:layout_height="704dp"
+            android:layout_width="338dp"
+            android:layout_height="631dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="124dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="-97dp"
+            android:layout_marginTop="201dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="-101dp"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/tragif" />
 

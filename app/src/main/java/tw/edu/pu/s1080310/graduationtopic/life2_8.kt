@@ -7,6 +7,7 @@ import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_life2.*
 import kotlinx.android.synthetic.main.activity_life2_1.*
 import kotlinx.android.synthetic.main.activity_life2_8.*
 import java.util.*
@@ -44,7 +45,14 @@ class life2_8 : AppCompatActivity() , View.OnClickListener{
         soundPool4!!.load(baseContext, R.raw.point, 0)
 
 
+        camera8.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                intent = Intent(this@life2_8, cam9::class.java)
+                startActivity(intent)
+                finish()
 
+            }
+        })
 
         subway.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {

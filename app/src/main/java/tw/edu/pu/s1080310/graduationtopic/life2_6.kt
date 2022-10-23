@@ -7,6 +7,7 @@ import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_life2.*
 import kotlinx.android.synthetic.main.activity_life2_1.*
 import kotlinx.android.synthetic.main.activity_life2_5.*
 import kotlinx.android.synthetic.main.activity_life2_6.*
@@ -43,7 +44,14 @@ class life2_6 : AppCompatActivity(), View.OnClickListener {
         soundPool4!!.load(baseContext, R.raw.point, 0)
 
 
+        camera6.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                intent = Intent(this@life2_6, cam7::class.java)
+                startActivity(intent)
+                finish()
 
+            }
+        })
 
         trashcar1.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {

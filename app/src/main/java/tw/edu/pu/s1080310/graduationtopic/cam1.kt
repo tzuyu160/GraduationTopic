@@ -5,7 +5,9 @@ import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.*
+import android.media.AudioManager
 import android.media.Image
+import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -17,6 +19,8 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.core.content.ContextCompat
 import com.innfinity.permissionflow.lib.requestPermissions
+import kotlinx.android.synthetic.main.activity_cam2.*
+import kotlinx.android.synthetic.main.activity_life2.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -33,16 +37,25 @@ class cam1 : AppCompatActivity() {
     lateinit var txv: TextView
     lateinit var viewFinder: PreviewView
 
-
+    private var soundPool1: SoundPool? = null
+    private val soundId = 1
+    private var soundPool2: SoundPool? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cam1)
-
+        getSupportActionBar()?.hide();
 
         txv = findViewById(R.id.txv)
         txv.text = "您尚未允許拍照權限"
         viewFinder = findViewById(R.id.viewFinder)
+
+
+        soundPool1 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
+        soundPool1!!.load(baseContext, R.raw.yes, 0)
+
+        soundPool2 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
+        soundPool2!!.load(baseContext, R.raw.wrong1, 1)
 
 
         GlobalScope.launch(Dispatchers.Main) {
@@ -50,6 +63,8 @@ class cam1 : AppCompatActivity() {
                 .collect { permissions ->
                     txv.text = "用相機辨識交通工具"
                     startCamera()
+
+
                 }
 
         }
@@ -88,7 +103,9 @@ class cam1 : AppCompatActivity() {
 
                     if (bitmap != null){
                         classifyDrawing(bitmap)
+
                     }
+
                 }
 
 
@@ -171,6 +188,7 @@ class cam1 : AppCompatActivity() {
     }
 
 
+
     fun classifyDrawing(bitmap : Bitmap) {
 
         val model = Transport.newInstance(this)
@@ -187,7 +205,7 @@ class cam1 : AppCompatActivity() {
                 sortByDescending { it.score } // 排序，高匹配率優先
             }.take(1)  //取最高的1個
 
-        var Result: String = ""
+        var Result:String = ""
         when (outputs[0].label) {
             "公車" -> Result = "公車"
             "火車" -> Result = "火車"
@@ -201,18 +219,18 @@ class cam1 : AppCompatActivity() {
             "腳踏車"-> Result = "腳踏車"
             "警車"-> Result = "警車"
         }
-
-        if(Result=="警車"&&outputs[0].score * 100.0f>20) {
+        if(Result=="警車"&&outputs[0].score * 100.0f>30) {
             txv.text="答對"
             intent = Intent(this@cam1, life2_1::class.java)
             startActivity(intent)
             finish()
 
+
+        } else {
+            txv.text="答錯囉"
+
         }
 
-        else {
-            txv.text="答錯囉"
-        }
         model.close()
 
     }
