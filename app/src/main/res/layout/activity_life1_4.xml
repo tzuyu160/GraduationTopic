@@ -118,6 +118,7 @@
             android:scaleType="fitXY"
             app:srcCompat="@drawable/od"
             tools:ignore="SpeakableTextPresentCheck" />
+
         <TextView
             android:id="@+id/txv3"
             style="@android:style/Widget.Holo.Light.TextView"
@@ -125,8 +126,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="87dp"
-            android:layout_marginBottom="21dp"
+            android:layout_marginEnd="85dp"
+            android:layout_marginBottom="17dp"
             android:gravity="center|start"
             android:scaleType="centerInside"
             android:text="0"

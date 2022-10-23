@@ -7,8 +7,7 @@ import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.startActivity
+import kotlinx.android.synthetic.main.activity_life2_1.*
 import kotlinx.android.synthetic.main.activity_life2_8.*
 import java.util.*
 import kotlin.concurrent.schedule
@@ -45,6 +44,8 @@ class life2_8 : AppCompatActivity() , View.OnClickListener{
         soundPool4!!.load(baseContext, R.raw.point, 0)
 
 
+
+
         subway.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 val alertDialog: android.app.AlertDialog.Builder =
@@ -54,12 +55,13 @@ class life2_8 : AppCompatActivity() , View.OnClickListener{
 
                 alertDialog.setMessage("太棒了!!! 選對了，此交通工具為捷運 ")
                 soundPool1?.play(soundId, 1F, 1F, 1, 0, 1F)
-                Timer().schedule(500) {
+                Timer().schedule(1000) {
                     soundPool3?.play(soundId, 1F, 1F, 0, 0, 1F)
                 }
                 alertDialog.setPositiveButton("繼續闖關",
                     DialogInterface.OnClickListener { dialog, which ->
                         soundPool4?.play(soundId, 1F, 1F, 1, 0, 1F)
+                        soundPool3?.stop(soundId)
                         intent = Intent(this@life2_8, life2_9::class.java)
                         startActivity(intent)
                         finish()

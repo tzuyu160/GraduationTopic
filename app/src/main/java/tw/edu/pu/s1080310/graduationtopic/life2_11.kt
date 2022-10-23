@@ -7,13 +7,12 @@ import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_life2_1.*
 import kotlinx.android.synthetic.main.activity_life2_11.*
 import kotlinx.android.synthetic.main.activity_life2_9.*
-import kotlinx.android.synthetic.main.activity_life2_9.firetruck
-import kotlinx.android.synthetic.main.activity_life2_9.taxi3
-import kotlinx.android.synthetic.main.activity_life2_9.train5
 import java.util.*
 import kotlin.concurrent.schedule
+
 
 class life2_11 : AppCompatActivity() , View.OnClickListener{
 
@@ -42,6 +41,8 @@ class life2_11 : AppCompatActivity() , View.OnClickListener{
         soundPool4 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
         soundPool4!!.load(baseContext, R.raw.point, 0)
 
+
+
         taxi4.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 val alertDialog: android.app.AlertDialog.Builder =
@@ -51,13 +52,14 @@ class life2_11 : AppCompatActivity() , View.OnClickListener{
 
                 alertDialog.setMessage("太棒了!!! 選對了，此交通工具為計程車 ")
                 soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
-                Timer().schedule(500) {
+                Timer().schedule(1000) {
                     soundPool3?.play(soundId, 1F, 1F, 0, 0, 1F)
                 }
                 alertDialog.setPositiveButton("繼續闖關",
                     DialogInterface.OnClickListener { dialog, which ->
                         soundPool4?.play(soundId, 1F, 1F, 1, 0, 1F)
-                        intent = Intent(this@life2_11, life2_10::class.java)
+                        soundPool3?.stop(soundId)
+                        intent = Intent(this@life2_11, life2_12::class.java)
                         startActivity(intent)
                         finish()
                     })
@@ -109,16 +111,8 @@ class life2_11 : AppCompatActivity() , View.OnClickListener{
 
 
 
-
-
-
-
-
-
-
-
-
     override fun onClick(p0: View?) {
 
     }
 }
+

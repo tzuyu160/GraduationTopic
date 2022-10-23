@@ -7,6 +7,7 @@ import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_life2_1.*
 import kotlinx.android.synthetic.main.activity_life2_5.*
 import kotlinx.android.synthetic.main.activity_life2_6.*
 import java.util.*
@@ -52,13 +53,14 @@ class life2_6 : AppCompatActivity(), View.OnClickListener {
 
                 alertDialog.setMessage("太棒了!!! 選對了，此交通工具為垃圾車 ")
                 soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
-                Timer().schedule(500) {
+                Timer().schedule(1000) {
                     soundPool3?.play(soundId, 1F, 1F, 0, 0, 1F)
                 }
 
                 alertDialog.setPositiveButton("繼續闖關",
                     DialogInterface.OnClickListener { dialog, which ->
                         soundPool4?.play(soundId, 1F, 1F, 1, 0, 1F)
+                        soundPool3?.stop(soundId)
                         intent = Intent(this@life2_6, life2_7::class.java)
                         startActivity(intent)
                         finish()

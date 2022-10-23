@@ -17,7 +17,8 @@ import kotlinx.android.synthetic.main.activity_liferule2.*
 
 class liferule2 : AppCompatActivity() {
 
-
+    private var soundPool4: SoundPool? = null
+    private val soundId = 1
     lateinit var mper:MediaPlayer
 
 
@@ -27,6 +28,9 @@ class liferule2 : AppCompatActivity() {
         setContentView(R.layout.activity_liferule2)
         getSupportActionBar()?.hide();
 
+        soundPool4 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
+        soundPool4!!.load(baseContext, R.raw.point, 0)
+
         mper = MediaPlayer()
 
 
@@ -35,6 +39,7 @@ class liferule2 : AppCompatActivity() {
 
         next.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
+                soundPool4?.play(soundId, 1F, 1F, 1, 0, 1F)
                 intent = Intent(this@liferule2, life2::class.java)
                 startActivity(intent)
                 finish()

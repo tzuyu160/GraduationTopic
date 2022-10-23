@@ -9,6 +9,8 @@ import android.widget.ImageView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_game1.*
 
+
+
 class gameActivity1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

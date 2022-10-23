@@ -4,8 +4,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-feature android:name="android.hardware.camera"
-        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -17,13 +16,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GraduationTopic">
         <activity
+            android:name=".cam1"
+            android:exported="true" />
+
+        <activity
+            android:name=".life2_12"
+            android:exported="true" />
+
+        <activity
             android:name=".life2_11"
             android:exported="true" />
         <activity
             android:name=".liferule2"
-            android:exported="true" />
-        <activity
-            android:name=".life2_10"
             android:exported="true" />
         <activity
             android:name=".life2_9"

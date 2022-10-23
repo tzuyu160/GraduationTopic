@@ -71,12 +71,12 @@ class life1_9 : AppCompatActivity(), View.OnClickListener{
                 if (counter == 21555) {
                     alertDialog.setMessage("太棒了!!! 錢給得剛剛好喔")
                     soundPool2?.play(soundId, 1F, 1F, 0, 0, 1F)
-                    alertDialog.setPositiveButton("繼續選購", { dialog, which ->
+                    alertDialog.setPositiveButton("繼續選購") { dialog, which ->
                         soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
                         intent = Intent(this@life1_9, life1::class.java)
                         startActivity(intent)
                         finish()
-                    })
+                    }
                 } else if (counter < 21555){
                     paymoney = total - counter
                     alertDialog.setMessage("挖~~~給的錢還不夠喔還剩" + paymoney + "元")

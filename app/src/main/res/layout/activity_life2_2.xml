@@ -71,6 +71,19 @@
             app:srcCompat="@drawable/taxi"
             tools:ignore="SpeakableTextPresentCheck" />
 
+        <ImageButton
+            android:id="@+id/camera2"
+            android:layout_width="58dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="419dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/camera"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
 
     </RelativeLayout>
 </LinearLayout>

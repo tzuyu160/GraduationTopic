@@ -99,14 +99,7 @@ class gameActivity2_2_1 : AppCompatActivity(),
             Result += ": " + String.format("%.1f%%", outputs[0].score * 100.0f)
             Toast.makeText(this, Result, Toast.LENGTH_SHORT).show()
 
-        }else if(Result=="長方形"&&outputs[0].score * 100.0f>10){
-            soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
-
-            Toast.makeText(baseContext, "差一點點囉!", Toast.LENGTH_SHORT).show()
-        }
-
-
-        else {
+        } else {
             Toast.makeText(baseContext, "答錯", Toast.LENGTH_SHORT).show()
             soundPool2?.play(soundId, 1F, 1F, 0, 0, 1F)
         }
