@@ -38,7 +38,7 @@ class cam1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cam1)
-        getSupportActionBar()?.hide();
+
 
         txv = findViewById(R.id.txv)
         txv.text = "您尚未允許拍照權限"
