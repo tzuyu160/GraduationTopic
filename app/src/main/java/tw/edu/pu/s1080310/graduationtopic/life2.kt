@@ -18,6 +18,7 @@ import kotlinx.android.synthetic.main.activity_ani3.*
 import kotlinx.android.synthetic.main.activity_animation.*
 import kotlinx.android.synthetic.main.activity_game1.*
 import kotlinx.android.synthetic.main.activity_game1_2_3.view.*
+import kotlinx.android.synthetic.main.activity_game2_3.*
 import kotlinx.android.synthetic.main.activity_life.*
 import kotlinx.android.synthetic.main.activity_life1.*
 import kotlinx.android.synthetic.main.activity_life1_1.*
@@ -67,7 +68,14 @@ class life2 : AppCompatActivity(), View.OnClickListener {
         soundPool4!!.load(baseContext, R.raw.point, 0)
 
 
+        camera.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                intent = Intent(this@life2, cam1::class.java)
+                startActivity(intent)
+                finish()
 
+            }
+        })
 
        
 
