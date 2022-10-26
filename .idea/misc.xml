@@ -9,7 +9,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/drawable/maincolor.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_ani1.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_ani2.xml" value="0.2" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_ani3.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_ani3.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_animation.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_cam1.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_cam10.xml" value="0.23489583333333333" />
@@ -34,12 +34,12 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_camera9.xml" value="0.23550724637681159" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_finger.xml" value="0.223731884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game.xml" value="0.25" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1.xml" value="0.536" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game121.xml" value="0.1816123188405797" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_1.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_2.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_24.xml" value="0.1322463768115942" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_2_1.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_2_1.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_2_2.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_2_3.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game1_2_4.xml" value="0.4" />
@@ -57,7 +57,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game3_3.xml" value="0.2390625" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game3_3_1.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_game3_4.xml" value="0.20606884057971014" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life.xml" value="0.2477355072463768" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1.xml" value="0.2246376811594203" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1_1.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life1_2.xml" value="0.264" />
@@ -83,7 +83,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life2_8.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_life2_9.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_liferule2.xml" value="0.536" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/layout/film_item.xml" value="0.4" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GraduationTopic/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
