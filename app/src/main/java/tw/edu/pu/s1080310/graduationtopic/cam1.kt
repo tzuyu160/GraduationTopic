@@ -219,7 +219,7 @@ class cam1 : AppCompatActivity() {
             "腳踏車"-> Result = "腳踏車"
             "警車"-> Result = "警車"
         }
-        if(Result=="警車"&&outputs[0].score * 100.0f>30) {
+        if(Result=="警車"&&outputs[0].score * 100.0f>10) {
             txv.text="答對"
             intent = Intent(this@cam1, life2_1::class.java)
             startActivity(intent)

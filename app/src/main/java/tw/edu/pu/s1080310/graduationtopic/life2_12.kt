@@ -5,6 +5,7 @@ import android.content.Intent
 import android.graphics.*
 import android.media.AudioManager
 import android.media.Image
+import android.media.MediaPlayer
 import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -28,6 +29,8 @@ class life2_12 : AppCompatActivity() {
 
     private var soundPool1: SoundPool? = null
     private val soundId = 1
+    lateinit var mper: MediaPlayer
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +41,11 @@ class life2_12 : AppCompatActivity() {
         soundPool1 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
         soundPool1!!.load(baseContext, R.raw.point, 0)
 
+        mper = MediaPlayer()
+
+
+        mper = MediaPlayer.create(this, R.raw.great)
+        mper.start()
 
         homepage12.setOnClickListener(View.OnClickListener {
             soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
@@ -66,5 +74,20 @@ class life2_12 : AppCompatActivity() {
         })
     }
 
+    override fun onPause() {
+        super.onPause()
+        if(mper != null && mper.isPlaying()){
+            mper.pause()
+        }
+        else{
+            mper.reset()
+        }
+    }
 
+    override fun onResume() {
+        super.onResume()
+        if(mper != null){
+            mper.start()
+        }
+    }
 }

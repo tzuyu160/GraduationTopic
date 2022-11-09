@@ -115,6 +115,8 @@ class cam2 : AppCompatActivity() {
 
         }
 
+
+
         fun toBitmap(image: Image): Bitmap {
             val planes = image.planes
             val yBuffer: ByteBuffer = planes[0].buffer
@@ -199,19 +201,18 @@ class cam2 : AppCompatActivity() {
             }
 
 
-            if(Result=="公車"&&outputs[0].score * 100.0f>30) {
+            if(Result=="公車"&&outputs[0].score * 100.0f>10) {
                 txv.text="答對"
-                intent = Intent(this@cam2, life2_2::class.java)
-                startActivity(intent)
-                finish()
+                    intent = Intent(this@cam2, life2_2::class.java)
+                    startActivity(intent)
+                    finish()
 
-
-            } else {
-                txv.text="答錯囉"
+            }else {
+                txv.text = "答錯囉"
             }
 
-
             model.close()
+
 
         }
 

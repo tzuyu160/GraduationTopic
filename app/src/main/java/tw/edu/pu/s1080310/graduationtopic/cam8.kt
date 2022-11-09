@@ -200,7 +200,7 @@ class cam8 : AppCompatActivity() {
         }
 
 
-        if(Result=="火車"&&outputs[0].score * 100.0f>30) {
+        if(Result=="火車"&&outputs[0].score * 100.0f>10) {
             txv.text="答對"
             intent = Intent(this@cam8, life2_8::class.java)
             startActivity(intent)

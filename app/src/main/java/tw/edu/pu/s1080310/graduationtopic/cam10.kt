@@ -200,7 +200,7 @@ class cam10 : AppCompatActivity() {
         }
 
 
-        if(Result=="消防車"&&outputs[0].score * 100.0f>30) {
+        if(Result=="消防車"&&outputs[0].score * 100.0f>10) {
             txv.text="答對"
             intent = Intent(this@cam10, life2_11::class.java)
             startActivity(intent)

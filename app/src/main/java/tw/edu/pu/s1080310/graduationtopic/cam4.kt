@@ -201,7 +201,7 @@ class cam4 : AppCompatActivity() {
         }
 
 
-        if(Result=="腳踏車"&&outputs[0].score * 100.0f>30) {
+        if(Result=="腳踏車"&&outputs[0].score * 100.0f>10) {
             txv.text="答對"
             intent = Intent(this@cam4, life2_4::class.java)
             startActivity(intent)

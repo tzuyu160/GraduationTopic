@@ -201,7 +201,7 @@ class cam3 : AppCompatActivity() {
         }
 
         model.close()
-        if(Result=="救護車"&&outputs[0].score * 100.0f>30) {
+        if(Result=="救護車"&&outputs[0].score * 100.0f>10) {
             txv.text="答對"
             intent = Intent(this@cam3, life2_3::class.java)
             startActivity(intent)

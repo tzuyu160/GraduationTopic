@@ -3,6 +3,7 @@ package tw.edu.pu.s1080310.graduationtopic
 import android.content.DialogInterface
 import android.content.Intent
 import android.media.AudioManager
+import android.media.MediaPlayer
 import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,6 +22,7 @@ class life2_7 : AppCompatActivity() , View.OnClickListener {
     private var soundPool3: SoundPool? = null
     private var soundPool4: SoundPool? = null
     private val soundId = 1
+    lateinit var mper: MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +44,11 @@ class life2_7 : AppCompatActivity() , View.OnClickListener {
         soundPool3!!.load(baseContext, R.raw.train, 1)
         soundPool4 = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
         soundPool4!!.load(baseContext, R.raw.point, 0)
+        mper = MediaPlayer()
 
+
+        mper = MediaPlayer.create(this, R.raw.trainstop)
+        mper.start()
 
         camera7.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
@@ -63,6 +69,7 @@ class life2_7 : AppCompatActivity() , View.OnClickListener {
                 alertDialog.setMessage("太棒了!!! 選對了，此交通工具為火車 ")
                 soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
                 Timer().schedule(1000) {
+                    mper.stop()
                     soundPool3?.play(soundId, 1F, 1F, 0, 0, 1F)
                 }
                 alertDialog.setPositiveButton("繼續闖關",
@@ -84,7 +91,7 @@ class life2_7 : AppCompatActivity() , View.OnClickListener {
             override fun onClick(p0: View?) {
                 val alertDialog: android.app.AlertDialog.Builder =
                     android.app.AlertDialog.Builder(this@life2_7)
-
+                mper.stop()
                 soundPool2?.play(soundId, 1F, 1F, 0, 0, 1F)
                 alertDialog.setMessage("此交通工具為計程車")
                 alertDialog.setPositiveButton("繼續選答",
@@ -101,7 +108,7 @@ class life2_7 : AppCompatActivity() , View.OnClickListener {
             override fun onClick(p0: View?) {
                 val alertDialog: android.app.AlertDialog.Builder =
                     android.app.AlertDialog.Builder(this@life2_7)
-
+                mper.stop()
                 soundPool2?.play(soundId, 1F, 1F, 0, 0, 1F)
                 alertDialog.setMessage("此交通工具為船")
                 alertDialog.setPositiveButton("繼續選答",
@@ -117,5 +124,21 @@ class life2_7 : AppCompatActivity() , View.OnClickListener {
 
     override fun onClick(p0: View?) {
 
+    }
+    override fun onPause() {
+        super.onPause()
+        if(mper != null && mper.isPlaying()){
+            mper.pause()
+        }
+        else{
+            mper.reset()
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if(mper != null){
+            mper.start()
+        }
     }
 }

@@ -199,7 +199,7 @@ class cam9 : AppCompatActivity() {
         }
 
 
-        if(Result=="捷運"&&outputs[0].score * 100.0f>30) {
+        if(Result=="捷運"&&outputs[0].score * 100.0f>10) {
             txv.text="答對"
             intent = Intent(this@cam9, life2_9::class.java)
             startActivity(intent)

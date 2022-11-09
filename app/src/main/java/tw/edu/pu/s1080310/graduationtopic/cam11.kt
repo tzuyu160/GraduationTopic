@@ -199,7 +199,7 @@ class cam11 : AppCompatActivity() {
         }
 
 
-        if(Result=="計程車"&&outputs[0].score * 100.0f>30) {
+        if(Result=="計程車"&&outputs[0].score * 100.0f>10) {
             txv.text="答對"
             intent = Intent(this@cam11, life2_12::class.java)
             startActivity(intent)

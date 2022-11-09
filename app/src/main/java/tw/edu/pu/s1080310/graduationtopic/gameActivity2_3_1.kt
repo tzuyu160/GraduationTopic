@@ -93,7 +93,7 @@ class gameActivity2_3_1 : AppCompatActivity(),
         }
 
 
-        if(Result=="三角形"&&outputs[0].score * 100.0f>30) {
+        if(Result=="三角形") {
             soundPool1?.play(soundId, 1F, 1F, 0, 0, 1F)
             intent = Intent(this@gameActivity2_3_1, gameActivity2_4::class.java)
             startActivity(intent)
